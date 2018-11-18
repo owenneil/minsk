@@ -24,6 +24,7 @@ namespace Minsk.CodeAnalysis
 
         public Compilation Previous { get; }
         public SyntaxTree SyntaxTree { get; }
+        public ImmutableArray<VariableSymbol> Variables => GlobalScope.Variables;
 
         internal BoundGlobalScope GlobalScope
         {
